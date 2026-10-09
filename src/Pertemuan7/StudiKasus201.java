@@ -31,6 +31,20 @@ public class StudiKasus201 {
                 pesan = "Maaf anda tidak mendapatkan dana penghargaan";
             } 
 
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            System.out.print("Jumlah dokumen : ");
+            jmlDokumen = abror.nextInt();
+            System.out.print("Status Pendanaan (1/0) : ");
+            statusDana = abror.nextInt();
+            if (statusDana == 1) {
+                pesan = "Selamat anda mendapatkan dana penghargaan";                
+                if (jmlDokumen < 4) {
+                int selisih = 4 - jmlDokumen;
+                    pesan = "Dokumen tidak lengkap (kurang "+ selisih + " dokumen), Dana penghargaan tidak diberikan"; }                      
+            } else {
+                pesan = "Maaf anda tidak mendapatkan dana penghargaan";
+            } 
+
         } else {
             pesan = "Maaf anda tidak mendapatkan dana penghargaan";
         }       
