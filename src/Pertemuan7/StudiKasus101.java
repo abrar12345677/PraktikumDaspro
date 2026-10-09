@@ -8,14 +8,14 @@ Syarat minimal belanja untuk diskon = 80000 + (1 mod 5) × 10000 → Rp 90000
 Persentase diskon = 5 + (1 mod 6) % → 6%
 */
 
-package Praktikum08;
+package Pertemuan7;
 import java.util.Scanner;
 
 public class StudiKasus101 {
     public static void main(String[] args) {
         Scanner abror = new Scanner(System.in);
 
-        int hargaPerCup = 16000;
+        int hargaPerCup = 18000;
         int jumlahCup, uangBayar;
         int totalHarga, diskon, totalBayar;
         int kembalian, kurang;
@@ -28,8 +28,8 @@ public class StudiKasus101 {
         totalHarga = jumlahCup * hargaPerCup;
         diskon = 0;
 
-        if (totalHarga >= 90000) {
-            diskon = totalHarga * 6 / 100;            
+        if (totalHarga >= 100000) {
+            diskon = totalHarga * 10 / 100;            
         }
         
         totalBayar = totalHarga - diskon;
