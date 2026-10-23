@@ -1,7 +1,5 @@
-/*
-Jumlah mahasiswa (batas perulangan FOR) = 8 + (1 mod 5) → 9
-Batas kelulusan pada Pertanyaan no. 4 (modifikasi kode) = 55 + (1 mod 11) → 56
-*/
+//Jumlah mahasiswa (batas perulangan FOR) = 8 + (1 mod 5) → 9
+//Batas kelulusan pada Pertanyaan no. 4 (modifikasi kode) = 55 + (1 mod 11) → 56
 
 package Pertemuan9;
 
@@ -14,7 +12,7 @@ public class SiakadFOR01 {
         int jmlMahasiswaLulus=0, jmlMahasiswaTdkLulus=0;
         double nilai, tertinggi = 0, terendah = 100;
 
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 9; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
             nilai = abror.nextDouble();
 
