@@ -1,3 +1,9 @@
+/*
+Kategori nilai huruf (A/B+/B/C+/C/D/E) mengikuti skala penilaian resmi kampus sehingga
+TIDAK diubah.
+Pada Pertanyaan no. 3, 15 + (1 mod 10) → 16
+*/
+
 package Pertemuan9;
 
 import java.net.Socket;
@@ -24,6 +30,7 @@ public class SiakadWHILE01 {
 
             if (nilai > 80 && nilai <= 100) {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah A");
+                System.out.println("Bagus, pertahankan nilainya");
             } else if (nilai > 73 && nilai <= 80) {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah B+");
             } else if (nilai > 65 && nilai <= 73) {
