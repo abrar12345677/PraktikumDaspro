@@ -22,6 +22,11 @@ public class SiakadFOR01 {
             if (nilai < terendah) {
                 terendah = nilai;
             }
+            if (nilai >= 60) {
+                jmlMahasiswaLulus++;
+            } else {
+                jmlMahasiswaTdkLulus++;
+            }
              
         }
             
