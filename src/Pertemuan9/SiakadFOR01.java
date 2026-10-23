@@ -29,7 +29,8 @@ public class SiakadFOR01 {
             }
              
         }
-            
+            System.out.println("Mahasiswa yang lulus : "+jmlMahasiswaLulus);
+            System.out.println("Mahasiswa yang tidak lulus : "+jmlMahasiswaTdkLulus);
             System.out.println("Nilai Tertinggi : "+ tertinggi);
             System.out.println("Nilai Terendah : "+ terendah);
     }
