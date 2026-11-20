@@ -1,10 +1,12 @@
 package Pertemuan12;
-
+/*
+50 + (P mod 50) = 51
+*/
 public class SearchNilai01 {
     public static void main(String[] args) {
         
         int[] nilai = {78, 65, 90, 55, 88, 72};
-        int key = 90;
+        int key = 51;
         boolean ditemukan = false;
 
         for (int i = 0; i < nilai.length; i++) {
