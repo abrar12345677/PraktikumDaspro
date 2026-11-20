@@ -8,6 +8,7 @@ public class ArrayRataNilai01 {
 
         int[] nilaiMhs = new int[10];
         int total = 0;
+        int jumlahLulus = 0;
         double rata2;
         String predikatKelas;
 
@@ -15,6 +16,10 @@ public class ArrayRataNilai01 {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiMhs[i] = abror.nextInt();
             total += nilaiMhs[i];
+
+            if (nilaiMhs[i] > 70) {
+                jumlahLulus++;
+            }
         }
         rata2 = (double) total / nilaiMhs.length;
         System.out.println("Total nilai: " + total);
@@ -35,6 +40,7 @@ public class ArrayRataNilai01 {
         }
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);  
+        System.out.println("Jumlah mahasiswa lulus (nilai>70) : "+jumlahLulus);
         System.out.println("Predikat Kelas: "+ predikatKelas);
     }
     
