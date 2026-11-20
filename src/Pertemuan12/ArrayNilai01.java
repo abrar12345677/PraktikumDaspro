@@ -1,5 +1,7 @@
 package Pertemuan12;
-
+/*
+60 + (P mod 41) = 61
+*/
 import java.util.Scanner;
 
 public class ArrayNilai01 {
@@ -13,7 +15,7 @@ public class ArrayNilai01 {
             nilaiAkhir[i] = input.nextInt();
         }
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
+            String status = (nilaiAkhir[i] > 61) ? "LULUS" : "TIDAK LULUS";
             System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
         status + ")");
         }
