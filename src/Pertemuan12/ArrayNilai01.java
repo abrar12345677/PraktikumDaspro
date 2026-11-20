@@ -10,14 +10,27 @@ public class ArrayNilai01 {
         int[] nilaiAkhir = new int[10];
         Scanner input = new Scanner(System.in);
 
+        int jumlahLulus = 0;
+        int jumlahTdkLulus = 0;
+
         for (int i = 0; i < nilaiAkhir.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiAkhir[i] = input.nextInt();
         }
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 61) ? "LULUS" : "TIDAK LULUS";
+            String status;
+            if (nilaiAkhir[i] > 61) {
+                status = "LULUS";
+                jumlahLulus++;
+            } else {
+                status = "TIDAK LULUS";
+                jumlahTdkLulus++;
+            }
             System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
-        status + ")");
+        status + ")"); 
         }
+        System.out.println("\nJumlah mahasiswa yang lulus : "+jumlahLulus);
+        System.out.println("Jumlah yang tidak lulus : "+jumlahTdkLulus);
+
     }
 }
